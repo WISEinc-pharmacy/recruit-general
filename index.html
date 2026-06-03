@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>薬剤師採用情報 | つなぐ薬局グループ（ワイズ株式会社）</title>
+<meta name="description" content="つなぐ薬局グループの薬剤師採用情報。在宅医療の最前線で活躍する薬剤師を募集中。一般薬剤師・管理薬剤師・パート。給与テーブル公開・透明な評価制度。">
+<meta property="og:title" content="薬剤師採用情報 | つなぐ薬局グループ">
+<meta property="og:description" content="「薬剤師が変われば日本が変わる」在宅医療の最前線で、あなたの薬剤師人生を変える。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+/* ===== Design System Variables ===== */
+:root {
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #3B82F6;
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-rgb: 37,99,235;
+  --color-accent: #10B981;
+  --color-accent-rgb: 16,185,129;
+  --color-navy: #1E3A5F;
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #F8FAFC;
+  --color-text: #1e293b;
+  --color-text-sub: #64748b;
+  --color-border: #e2e8f0;
+  --font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-section: 80px;
+  --space-card: 24px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--font-family); color: var(--color-text); background: var(--color-bg); line-height: 1.8; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+::selection { background: var(--color-primary-100); color: var(--color-primary-dark); }
+img { max-width: 100%; display: block; }
+a { color: var(--color-primary); text-decoration: none; }
+:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
+
+/* ===== Animations ===== */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== Layout ===== */
+.container { max-width: 960px; margin: 0 auto; padding: 0 var(--space-6); }
+section { padding: var(--space-section) 0; }
+
+/* ===== Ticker ===== */
+.ticker { background: var(--color-primary); overflow: hidden; padding: 14px 0; }
+.ticker-track { display: flex; width: max-content; animation: ticker-scroll 25s linear infinite; }
+.ticker-item { flex-shrink: 0; padding: 0 var(--space-12); font-size: var(--text-sm); font-weight: 600; color: #fff; letter-spacing: .05em; white-space: nowrap; }
+@keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ===== Hero ===== */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: linear-gradient(160deg, #ffffff 0%, var(--color-primary-50) 50%, #ffffff 100%); overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -30%; right: -20%; width: 60vw; height: 60vw; border-radius: 50%; background: radial-gradient(circle, rgba(var(--color-primary-rgb), .06) 0%, transparent 70%); pointer-events: none; }
+.hero-inner { position: relative; z-index: 1; padding: 80px 0 60px; width: 100%; }
+.hero-badge { display: inline-block; background: var(--color-primary-100); color: var(--color-primary); padding: var(--space-2) 20px; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; letter-spacing: .05em; margin-bottom: var(--space-6); }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900; line-height: 1.3; margin-bottom: var(--space-4); }
+.hero h1 .accent { color: var(--color-primary); }
+.hero-sub { font-size: clamp(1rem, 2.5vw, var(--text-xl)); color: var(--color-text-sub); margin-bottom: 40px; max-width: 560px; line-height: 1.7; }
+.hero-stats { display: flex; gap: var(--space-8); flex-wrap: wrap; margin-bottom: 40px; }
+.hero-stat { text-align: center; }
+.hero-stat .num { font-size: var(--text-3xl); font-weight: 900; color: var(--color-primary); }
+.hero-stat .label { font-size: var(--text-sm); color: var(--color-text-sub); }
+.hero-actions { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 36px; border-radius: var(--radius-md); font-weight: 700; font-size: var(--text-base); cursor: pointer; transition: all .25s ease; border: none; min-height: 48px; }
+.btn-primary { background: var(--color-primary); color: #fff; box-shadow: 0 4px 14px rgba(var(--color-primary-rgb), .35); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(var(--color-primary-rgb), .45); }
+.btn-outline { background: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); }
+.btn-outline:hover { background: var(--color-primary); color: #fff; }
+
+/* ===== Section Header ===== */
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header h2 { font-size: clamp(var(--text-2xl), 4vw, var(--text-3xl)); font-weight: 900; margin-bottom: var(--space-3); }
+.section-header p { color: var(--color-text-sub); font-size: var(--text-lg); max-width: 600px; margin: 0 auto; }
+
+/* ===== Story ===== */
+.story-section { background: var(--color-surface-alt); }
+.story-content { max-width: 700px; margin: 0 auto; }
+.story-content blockquote { border-left: 4px solid var(--color-primary); padding: var(--space-6); background: #fff; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: var(--space-6); font-size: var(--text-lg); line-height: 1.9; color: var(--color-text); }
+.story-content blockquote .author { display: block; margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-sub); font-style: normal; }
+.story-content p { margin-bottom: var(--space-4); font-size: var(--text-base); line-height: 1.9; }
+
+/* ===== Features ===== */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+.feature-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-card); transition: transform .25s ease, box-shadow .25s ease; }
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.feature-icon { font-size: 2rem; margin-bottom: var(--space-3); }
+.feature-card h4 { font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-2); }
+.feature-card p { color: var(--color-text-sub); font-size: var(--text-sm); line-height: 1.7; }
+
+/* ===== Positions ===== */
+.positions { display: grid; gap: var(--space-6); }
+.pos-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: transform .25s ease; }
+.pos-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.pos-header { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: #fff; padding: var(--space-card); }
+.pos-header.green-accent { background: linear-gradient(135deg, #059669, #047857); }
+.pos-tag { display: inline-block; background: rgba(255,255,255,.2); padding: 4px 12px; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; margin-bottom: var(--space-2); }
+.pos-title { font-size: var(--text-2xl); font-weight: 900; margin-bottom: var(--space-2); }
+.pos-salary { font-size: var(--text-3xl); font-weight: 900; }
+.pos-salary span { font-size: var(--text-base); font-weight: 400; }
+.pos-location { font-size: var(--text-sm); opacity: .85; margin-top: var(--space-2); }
+.pos-body { padding: var(--space-card); }
+.pos-body h4 { font-size: var(--text-base); font-weight: 700; margin: var(--space-4) 0 var(--space-2); color: var(--color-primary); }
+.pos-body h4:first-child { margin-top: 0; }
+.pos-body ul { padding-left: 20px; }
+.pos-body li { font-size: var(--text-sm); line-height: 1.8; color: var(--color-text-sub); }
+
+/* ===== Career Path ===== */
+.career-path { display: flex; justify-content: center; gap: var(--space-6); flex-wrap: wrap; padding: var(--space-6) 0; }
+.career-step { text-align: center; position: relative; }
+.career-step:not(:last-child)::after { content: '\2192'; position: absolute; right: calc(-1 * var(--space-6) / 2 - 8px); top: 30px; font-size: var(--text-xl); color: var(--color-text-sub); }
+.career-circle { width: 80px; height: 80px; border-radius: 50%; background: var(--color-primary-100); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: var(--text-xs); font-weight: 700; line-height: 1.3; margin: 0 auto var(--space-2); }
+.career-step-title { font-size: var(--text-sm); font-weight: 600; }
+.career-step-salary { font-size: var(--text-sm); color: var(--color-primary); font-weight: 700; }
+
+/* ===== Stores ===== */
+.stores { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+.store-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-card); }
+.store-card h3 { font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.area-tag { display: inline-block; background: var(--color-primary-100); color: var(--color-primary); padding: 2px 10px; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; }
+.certified-tag { display: inline-block; background: #ECFDF5; color: #059669; padding: 2px 10px; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; }
+.store-info { list-style: none; }
+.store-info li { padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); font-size: var(--text-sm); display: flex; gap: var(--space-3); }
+.store-info li:last-child { border-bottom: none; }
+.store-info .label { min-width: 60px; font-weight: 600; color: var(--color-text); flex-shrink: 0; }
+
+/* ===== Benefits ===== */
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-6); }
+.benefit-item { text-align: center; padding: var(--space-card); background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+.benefit-icon { font-size: 2rem; margin-bottom: var(--space-3); }
+.benefit-item h4 { font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-2); }
+.benefit-item p { font-size: var(--text-sm); color: var(--color-text-sub); }
+
+/* ===== Flow ===== */
+.flow-steps { display: flex; justify-content: center; gap: var(--space-8); flex-wrap: wrap; }
+.flow-step { text-align: center; flex: 0 0 140px; }
+.flow-num { width: 48px; height: 48px; border-radius: 50%; background: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: var(--text-lg); margin: 0 auto var(--space-3); }
+.flow-step h4 { font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-2); }
+.flow-step p { font-size: var(--text-sm); color: var(--color-text-sub); }
+
+/* ===== CTA ===== */
+.cta-contact { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: #fff; padding: var(--space-section) 0; }
+.cta-contact h3 { font-size: var(--text-2xl); font-weight: 900; text-align: center; margin-bottom: var(--space-3); }
+.cta-contact > .container > p { text-align: center; opacity: .85; margin-bottom: var(--space-8); }
+.cta-form { max-width: 520px; margin: 0 auto; }
+.form-row { display: flex; gap: var(--space-4); }
+.form-group { flex: 1; margin-bottom: var(--space-4); }
+.form-group label { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: 6px; }
+.form-group input, .form-group select { width: 100%; min-width: 0; padding: 12px 16px; border: 2px solid rgba(255,255,255,.3); border-radius: var(--radius-md); background: rgba(255,255,255,.1); color: #fff; font-size: var(--text-base); font-family: var(--font-family); transition: border-color .2s ease; }
+.form-group input::placeholder { color: rgba(255,255,255,.5); }
+.form-group input:focus { outline: none; border-color: #fff; background: rgba(255,255,255,.15); }
+.cta-form button { width: 100%; padding: 16px; background: #fff; color: var(--color-primary); border: none; border-radius: var(--radius-md); font-size: var(--text-base); font-weight: 700; cursor: pointer; transition: all .25s ease; min-height: 48px; }
+.cta-form button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+.cta-result { margin-top: var(--space-4); padding: var(--space-4); border-radius: var(--radius-md); display: none; font-size: var(--text-sm); line-height: 1.7; }
+.cta-result.success { display: block; background: rgba(255,255,255,.15); }
+.cta-phone { text-align: center; margin-top: var(--space-6); font-size: var(--text-sm); opacity: .85; }
+.cta-phone a { color: #fff; font-weight: 700; }
+
+/* ===== Company ===== */
+.company-table { width: 100%; border-collapse: collapse; }
+.company-table th, .company-table td { padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--color-border); text-align: left; font-size: var(--text-sm); }
+.company-table th { width: 120px; font-weight: 600; color: var(--color-text); }
+
+/* ===== Links ===== */
+.links-section { background: var(--color-surface-alt); }
+.links-section h2 { text-align: center; font-size: var(--text-2xl); font-weight: 900; margin-bottom: var(--space-8); }
+.link-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-4); }
+.link-card { display: block; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-card); transition: all .25s ease; color: var(--color-text); }
+.link-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.08); border-color: var(--color-primary); }
+.link-card h4 { font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-2); }
+.link-card p { font-size: var(--text-sm); color: var(--color-text-sub); }
+
+/* ===== Footer ===== */
+footer { background: var(--color-navy); color: rgba(255,255,255,.7); text-align: center; padding: 40px var(--space-6); font-size: var(--text-sm); }
+footer a { color: rgba(255,255,255,.9); }
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .form-row { flex-direction: column; }
+  .hero-stats { gap: var(--space-6); }
+  .career-step:not(:last-child)::after { display: none; }
+  .career-path { gap: var(--space-4); }
+  .flow-steps { gap: var(--space-4); }
+  .flow-step { flex: 0 0 100px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Ticker ===== -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-item">在宅医療の最前線で活躍する薬剤師を募集中</div>
+    <div class="ticker-item">地域薬学ケア研修施設認定（柏・足立）</div>
+    <div class="ticker-item">給与テーブル公開 &mdash; 透明な評価制度</div>
+    <div class="ticker-item">有給取得率 74% &mdash; 業界平均を上回るワークライフバランス</div>
+    <div class="ticker-item">賞与 年3ヶ月分（夏2+冬1）</div>
+    <div class="ticker-item">在宅医療の最前線で活躍する薬剤師を募集中</div>
+    <div class="ticker-item">地域薬学ケア研修施設認定（柏・足立）</div>
+    <div class="ticker-item">給与テーブル公開 &mdash; 透明な評価制度</div>
+    <div class="ticker-item">有給取得率 74% &mdash; 業界平均を上回るワークライフバランス</div>
+    <div class="ticker-item">賞与 年3ヶ月分（夏2+冬1）</div>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">つなぐ薬局グループ 採用情報</div>
+      <h1>薬剤師が<span class="accent">変われば</span><br>日本が変わる。</h1>
+      <p class="hero-sub">処方箋を裁くだけの毎日に、違和感を感じていませんか。<br>私たちは、在宅医療の現場で「意見を求められる薬剤師」として活躍しています。</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num"><span class="count-up" data-target="5">0</span>+2</div>
+          <div class="label">店舗数</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num"><span class="count-up" data-target="74">0</span>%</div>
+          <div class="label">有給取得率</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num"><span class="count-up" data-target="2">0</span></div>
+          <div class="label">研修施設認定</div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-primary">応募・お問い合わせ</a>
+        <a href="#positions" class="btn btn-outline">募集ポジションを見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Story ===== -->
+<section class="story-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <h2>なぜ、つなぐ薬局なのか</h2>
+    </div>
+    <div class="story-content">
+      <blockquote>
+        大学で学んだ知識を発揮できる現場を想像していた。しかし最初に勤めた薬局は、処方箋調剤と同じ説明を繰り返す、個性のない働き方でした。<br><br>
+        転機は在宅医療との出会い。医師への診療同行で、<strong>「意見を求められる現場」</strong>に変わった。本来やりたかった職能発揮の環境を見つけ、薬剤師として働くことが楽しくなりました。<br><br>
+        全国に同じ苦境にいる薬剤師がいるはず。その薬剤師たちが活き活きすれば、日本が変わる。
+        <span class="author">&mdash; 山内伴紀（代表取締役）</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <h2>つなぐ薬局の特徴</h2>
+      <p>臨床の質にこだわる、在宅医療に強い薬局グループです。</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#127973;</div>
+        <h4>在宅医療の最前線</h4>
+        <p>医師への診療同行から始まる在宅薬剤師育成。処方箋を裁くだけでなく、患者の生活背景まで踏み込んだ薬学的介入を実践します。</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#127891;</div>
+        <h4>地域薬学ケア研修施設</h4>
+        <p>柏・足立の2店舗が研修施設認定。専門薬剤師を目指す環境が整っています。学会発表や学術活動にも積極的に取り組めます。</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#128200;</div>
+        <h4>給与テーブル公開</h4>
+        <p>昇給の基準と金額を全社員に公開。「何をすればいくら上がるか」が明確。透明性のある経営を実践しています。</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#128101;</div>
+        <h4>COMPASS 伴走プログラム</h4>
+        <p>在宅未経験でも安心。往診同行体験から始まり、先輩薬剤師が伴走しながら段階的にスキルアップできる独自プログラム。</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#127909;</div>
+        <h4>ファーマシストキャンパス</h4>
+        <p>YouTube・LINE公式を通じた在宅薬剤師育成コンテンツ。社内外から評価される学術活動に参加できます。</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">&#128170;</div>
+        <h4>外来プロジェクト（新規出店中）</h4>
+        <p>2026年夏、越谷・清瀬に外来薬局を新規出店。在宅だけでなく、外来でも活躍できるキャリアの幅が広がります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Positions ===== -->
+<section id="positions" class="reveal" style="background:var(--color-surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>募集ポジション</h2>
+      <p>あなたに合った働き方を選べます。</p>
+    </div>
+    <div class="positions">
+      <!-- 管理薬剤師 -->
+      <div class="pos-card reveal">
+        <div class="pos-header green-accent">
+          <div class="pos-tag">正社員</div>
+          <div class="pos-title">管理薬剤師</div>
+          <div class="pos-salary">624<span>万円</span></div>
+          <div class="pos-location">月給制＋賞与年2回（3ヶ月分）/ 見込残業10h込み</div>
+        </div>
+        <div class="pos-body">
+          <h4>役割</h4>
+          <ul>
+            <li>管理薬剤師として現場を統括</li>
+            <li>在宅患者への訪問薬剤管理指導</li>
+            <li>医師・看護師との多職種連携</li>
+            <li>スタッフの育成・シフト管理</li>
+          </ul>
+          <h4>求める人物像</h4>
+          <ul>
+            <li>薬剤師免許（必須）</li>
+            <li>調剤経験3年以上（在宅経験は不問）</li>
+            <li>チームで働くことが好きな方</li>
+            <li>在宅医療に興味がある方</li>
+          </ul>
+          <h4>キャリアパス</h4>
+          <ul>
+            <li>アドバンス取得で660万へ昇給</li>
+            <li>実績次第でエリアマネージャー（750万+）へ</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 一般薬剤師 -->
+      <div class="pos-card reveal">
+        <div class="pos-header">
+          <div class="pos-tag">正社員</div>
+          <div class="pos-title">一般薬剤師</div>
+          <div class="pos-salary">492〜540<span>万円</span></div>
+          <div class="pos-location">月給制＋賞与年2回（3ヶ月分）/ 残業実績支給</div>
+        </div>
+        <div class="pos-body">
+          <h4>役割</h4>
+          <ul>
+            <li>調剤業務・服薬指導・薬歴管理</li>
+            <li>在宅患者への訪問（先輩と同行から開始）</li>
+            <li>処方医との疑義照会・情報提供</li>
+          </ul>
+          <h4>求める人物像</h4>
+          <ul>
+            <li>薬剤師免許（必須）</li>
+            <li>調剤経験1年以上</li>
+            <li>「処方箋を裁くだけ」に物足りなさを感じている方</li>
+            <li>在宅未経験OK（COMPASSプログラムで伴走します）</li>
+          </ul>
+          <h4>入社後の流れ</h4>
+          <ul>
+            <li>試用期間6ヶ月（時給2,000〜2,600円） → 正社員転換</li>
+            <li>テーブル準拠で昇給。管理薬剤師への道が開かれています</li>
+          </ul>
+        </div>
+      </div>
+      <!-- パート -->
+      <div class="pos-card reveal">
+        <div class="pos-header">
+          <div class="pos-tag">パート</div>
+          <div class="pos-title">パート薬剤師</div>
+          <div class="pos-salary">時給2,000〜2,600<span>円</span></div>
+          <div class="pos-location">週3日〜相談可 / シフト制（曜日固定も可）</div>
+        </div>
+        <div class="pos-body">
+          <h4>役割</h4>
+          <ul>
+            <li>調剤業務・服薬指導・薬歴管理</li>
+            <li>勤務日数・時間帯は柔軟に相談可能</li>
+            <li>在宅業務への参加も歓迎（希望制）</li>
+          </ul>
+          <h4>求める人物像</h4>
+          <ul>
+            <li>薬剤師免許（必須）</li>
+            <li>ブランクOK・育児との両立歓迎</li>
+            <li>週3日〜、1日4時間〜相談可</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA 1 ===== -->
+<div class="cta-contact">
+  <div class="container">
+    <h3>お問い合わせはこちら</h3>
+    <p>ご質問・ご相談だけでもお気軽にどうぞ。担当者から折り返しご連絡いたします。</p>
+    <form class="cta-form" onsubmit="sendCTA(event, this)">
+      <input type="hidden" name="source" value="general-lp">
+      <div class="form-row">
+        <div class="form-group"><label>お名前 <span style="color:#FCA5A5">*</span></label><input type="text" name="name" placeholder="山田 太郎" required></div>
+        <div class="form-group"><label>年齢</label><input type="number" name="age" placeholder="35" min="20" max="80"></div>
+      </div>
+      <div class="form-group"><label>メールアドレス <span style="color:#FCA5A5">*</span></label><input type="email" name="email" placeholder="example@mail.com" required></div>
+      <div class="form-group"><label>電話番号</label><input type="tel" name="phone" placeholder="090-1234-5678"></div>
+      <button type="submit">送信する</button>
+      <div class="cta-result"></div>
+    </form>
+    <div class="cta-phone">お電話でのお問い合わせ: <a href="tel:04-7161-8904">04-7161-8904</a></div>
+  </div>
+</div>
+
+<!-- ===== Career Path ===== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <h2>キャリアパス</h2>
+      <p>給与テーブルを公開。明確なキャリアの道筋があります。</p>
+    </div>
+    <div class="career-path">
+      <div class="career-step reveal">
+        <div class="career-circle">一般<br>薬剤師</div>
+        <div class="career-step-title">一般薬剤師</div>
+        <div class="career-step-salary">492〜540万</div>
+      </div>
+      <div class="career-step reveal">
+        <div class="career-circle">管理<br>薬剤師</div>
+        <div class="career-step-title">管理薬剤師</div>
+        <div class="career-step-salary">624万</div>
+      </div>
+      <div class="career-step reveal">
+        <div class="career-circle">EM</div>
+        <div class="career-step-title">エリアマネージャー</div>
+        <div class="career-step-salary">750万+&alpha;</div>
+      </div>
+      <div class="career-step reveal">
+        <div class="career-circle">統括<br>部長</div>
+        <div class="career-step-title">統括部長</div>
+        <div class="career-step-salary">900万+&alpha;</div>
+      </div>
+    </div>
+    <p style="text-align:center; color:var(--color-text-sub); font-size:var(--text-sm); margin-top:var(--space-6);">
+      アドバンス（在宅スキル認定）取得で昇給。スキルアップが年収に直結する設計です。
+    </p>
+  </div>
+</section>
+
+<!-- ===== Stores ===== -->
+<section class="reveal" style="background:var(--color-surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>店舗一覧</h2>
+      <p>東京・千葉・埼玉に展開。在宅医療を中心とした薬局グループです。</p>
+    </div>
+    <div class="stores">
+      <div class="store-card reveal">
+        <h3>つなぐ薬局 柏 <span class="area-tag">東葛</span> <span class="certified-tag">研修施設認定</span></h3>
+        <ul class="store-info">
+          <li><span class="label">所在地</span><span>千葉県柏市柏3-6-29 安田ビル1F</span></li>
+          <li><span class="label">特徴</span><span>在宅医療の拠点。地域薬学ケア研修施設認定</span></li>
+        </ul>
+      </div>
+      <div class="store-card reveal">
+        <h3>つなぐ薬局 足立 <span class="area-tag">城北</span> <span class="certified-tag">研修施設認定</span></h3>
+        <ul class="store-info">
+          <li><span class="label">所在地</span><span>東京都足立区梅島1-9-13</span></li>
+          <li><span class="label">特徴</span><span>城北エリアの拠点。地域薬学ケア研修施設認定</span></li>
+        </ul>
+      </div>
+      <div class="store-card reveal">
+        <h3>つなぐ薬局 我孫子 <span class="area-tag">東葛</span></h3>
+        <ul class="store-info">
+          <li><span class="label">所在地</span><span>千葉県我孫子市我孫子1-1-22</span></li>
+          <li><span class="label">特徴</span><span>東葛エリアの在宅拠点</span></li>
+        </ul>
+      </div>
+      <div class="store-card reveal">
+        <h3>つなぐ薬局 蔵前 <span class="area-tag">城北</span></h3>
+        <ul class="store-info">
+          <li><span class="label">所在地</span><span>東京都台東区蔵前4-20-10</span></li>
+          <li><span class="label">特徴</span><span>2025年開局。城北エリアの新拠点</span></li>
+        </ul>
+      </div>
+      <div class="store-card reveal">
+        <h3>アイ調剤薬局 <span class="area-tag">城北</span></h3>
+        <ul class="store-info">
+          <li><span class="label">エリア</span><span>足立エリア</span></li>
+          <li><span class="label">特徴</span><span>在宅・外来の両方に対応</span></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:var(--space-8); color:var(--color-text-sub); font-size:var(--text-sm);">
+      2026年夏には越谷・清瀬に外来薬局を新規出店予定。<a href="https://wiseinc-pharmacy.github.io/recruit-lp/" style="font-weight:600;">外来プロジェクト採用情報はこちら</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===== Benefits ===== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <h2>待遇・福利厚生</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#128176;</div>
+        <h4>賞与 年3ヶ月分</h4>
+        <p>夏2ヶ月・冬1ヶ月。安定した報酬設計。</p>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#127968;</div>
+        <h4>住宅手当</h4>
+        <p>30,000〜83,040円/月。養育児加算あり。</p>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#128218;</div>
+        <h4>研修充実</h4>
+        <p>地域薬学ケア研修施設認定。専門薬剤師への道。</p>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#128200;</div>
+        <h4>給与テーブル公開</h4>
+        <p>昇給の基準が見える。透明性のある評価制度。</p>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#127796;</div>
+        <h4>有給取得率 74%</h4>
+        <p>業界平均を上回る取得率。ワークライフバランス重視。</p>
+      </div>
+      <div class="benefit-item reveal">
+        <div class="benefit-icon">&#128664;</div>
+        <h4>転勤手当</h4>
+        <p>15,000円/月。異動可能な方に支給。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Flow ===== -->
+<section class="reveal" style="background:var(--color-surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>選考フロー</h2>
+      <p>面接は原則1回。スピーディーに選考を進めます。</p>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step reveal">
+        <div class="flow-num">1</div>
+        <h4>応募</h4>
+        <p>フォームまたはメール</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">2</div>
+        <h4>面接</h4>
+        <p>オンラインまたは対面</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">3</div>
+        <h4>内定</h4>
+        <p>条件提示・合意</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">4</div>
+        <h4>入社</h4>
+        <p>試用期間+研修</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Company ===== -->
+<section class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <h2>会社概要</h2>
+    </div>
+    <table class="company-table">
+      <tr><th>法人名</th><td>ワイズ株式会社</td></tr>
+      <tr><th>ブランド</th><td>つなぐ薬局グループ</td></tr>
+      <tr><th>事業内容</th><td>調剤薬局の運営（在宅医療に強み）</td></tr>
+      <tr><th>店舗数</th><td>5店舗＋2店舗（2026年新規出店）</td></tr>
+      <tr><th>資格認定</th><td>地域薬学ケア研修施設（柏・足立）</td></tr>
+      <tr><th>HP</th><td><a href="https://www.wise-jmco.com/" target="_blank" rel="noopener">www.wise-jmco.com</a></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== Links ===== -->
+<section class="links-section reveal">
+  <div class="container">
+    <h2>関連リンク</h2>
+    <div class="link-cards">
+      <a href="https://wiseinc-pharmacy.github.io/recruit-lp/" class="link-card" target="_blank" rel="noopener">
+        <h4>&#127968; 外来プロジェクト採用LP</h4>
+        <p>越谷・清瀬の新規出店メンバー募集中</p>
+      </a>
+      <a href="https://www.wise-jmco.com/" class="link-card" target="_blank" rel="noopener">
+        <h4>&#127973; コーポレートサイト</h4>
+        <p>つなぐ薬局グループの理念・事業紹介</p>
+      </a>
+      <a href="https://www.youtube.com/@user-ht3ge8gu3y" class="link-card" target="_blank" rel="noopener">
+        <h4>&#127909; ファーマシストキャンパス</h4>
+        <p>在宅薬剤師育成の研修・YouTube</p>
+      </a>
+      <a href="https://wiseinc-pharmacy.github.io/career-lp/" class="link-card" target="_blank" rel="noopener">
+        <h4>&#128269; キャリア診断LP</h4>
+        <p>7問で自分に合うポジションがわかる</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA 2 ===== -->
+<div class="cta-contact" id="cta">
+  <div class="container">
+    <h3>応募・お問い合わせ</h3>
+    <p>ご興味をお持ちいただけましたら、お気軽にご連絡ください。</p>
+    <form class="cta-form" onsubmit="sendCTA(event, this)">
+      <input type="hidden" name="source" value="general-lp">
+      <div class="form-row">
+        <div class="form-group"><label>お名前 <span style="color:#FCA5A5">*</span></label><input type="text" name="name" placeholder="山田 太郎" required></div>
+        <div class="form-group"><label>年齢</label><input type="number" name="age" placeholder="35" min="20" max="80"></div>
+      </div>
+      <div class="form-group"><label>メールアドレス <span style="color:#FCA5A5">*</span></label><input type="email" name="email" placeholder="example@mail.com" required></div>
+      <div class="form-group"><label>電話番号</label><input type="tel" name="phone" placeholder="090-1234-5678"></div>
+      <button type="submit">送信する</button>
+      <div class="cta-result"></div>
+    </form>
+    <div class="cta-phone">お電話でのお問い合わせ: <a href="tel:04-7161-8904">04-7161-8904</a></div>
+  </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>&copy; 2026 ワイズ株式会社 &mdash; つなぐ薬局グループ</p>
+  <p style="margin-top:var(--space-2);"><a href="mailto:recruit@wise-jmco.com">recruit@wise-jmco.com</a></p>
+</footer>
+
+<!-- ===== Scripts ===== -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Scroll Reveal
+  var revealObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el) { revealObs.observe(el); });
+
+  // Count Up
+  var countObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      if (el.dataset.counted) return;
+      el.dataset.counted = '1';
+      var target = parseInt(el.dataset.target);
+      var duration = 1200;
+      var start = performance.now();
+      var step = function(now) {
+        var progress = Math.min((now - start) / duration, 1);
+        var ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.count-up').forEach(function(el) { countObs.observe(el); });
+});
+
+// CTA form handler
+function sendCTA(e, form) {
+  e.preventDefault();
+  var btn = form.querySelector('button');
+  var result = form.querySelector('.cta-result');
+  var name = form.querySelector('[name="name"]').value;
+  var age = form.querySelector('[name="age"]').value;
+  var email = form.querySelector('[name="email"]').value;
+  var phone = form.querySelector('[name="phone"]').value;
+  var source = form.querySelector('[name="source"]').value;
+
+  btn.disabled = true;
+  btn.textContent = '送信中...';
+  result.className = 'cta-result';
+  result.style.display = 'none';
+
+  var iframe = document.createElement('iframe');
+  iframe.name = 'cta-iframe-' + Date.now();
+  iframe.style.display = 'none';
+  document.body.appendChild(iframe);
+
+  var f = document.createElement('form');
+  f.method = 'POST';
+  f.action = 'https://script.google.com/macros/s/AKfycbxpK6Sy6TorBiZtTPwitEAxBElvVGEgWlGEKSHOSk80BqH8Bj3NI9WP8iWsawdwxCAy/exec';
+  f.target = iframe.name;
+
+  var fields = { name: name, age: age, email: email, phone: phone, source: source };
+  for (var key in fields) {
+    var inp = document.createElement('input');
+    inp.type = 'hidden';
+    inp.name = key;
+    inp.value = fields[key];
+    f.appendChild(inp);
+  }
+  document.body.appendChild(f);
+
+  iframe.onload = function() {
+    try { document.body.removeChild(iframe); } catch(x) {}
+    try { document.body.removeChild(f); } catch(x) {}
+  };
+
+  var done = false;
+  setTimeout(function() {
+    if (done) return;
+    done = true;
+    btn.textContent = '送信完了';
+    btn.style.background = '#059669';
+    btn.style.boxShadow = '0 4px 14px rgba(5,150,105,.35)';
+    result.className = 'cta-result success';
+    result.innerHTML = 'お問い合わせありがとうございます。<br><strong>recruit@wise-jmco.com</strong> から確認メールをお送りします。<br>届かない場合は迷惑メールフォルダをご確認ください。<br>お電話でもお問い合わせいただけます: <strong>04-7161-8904</strong>';
+    form.reset();
+    setTimeout(function() {
+      btn.textContent = '送信する';
+      btn.disabled = false;
+      btn.style.background = '';
+      btn.style.boxShadow = '';
+    }, 10000);
+  }, 3000);
+
+  f.submit();
+}
+</script>
+
+</body>
+</html>
